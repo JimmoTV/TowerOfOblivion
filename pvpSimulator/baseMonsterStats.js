@@ -120,6 +120,19 @@ const baseMonsterStats = {
 			fixedHP: 2933175,
 		},
 	},
+
+	'Lion': {
+		className: 'mNemean',
+		stats: {
+			attack: 11405,
+			hp: 195545,
+			armorBreak: 0.20,
+			holyDamage: 0.10,
+			speed: 220,
+			fixedAttack: 108347,
+			fixedHP: 2933175,
+		},
+	},
 };
 
 
