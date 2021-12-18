@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idle Heroes PvP Simulator - Genetic Algorithm</title>
+  
+  <link rel="stylesheet" type="text/css" href="../pvpSimulator/style.css">
+  
+  <script type="module" src="geneticInitAndSync.js"></script>
+</head>
+
+
+<body onload="initialize();">
+  <div class="banner">
+    <div><a href="../index.html">Home</a></div>
+    <h1>Idle Heroes PvP Simulator - Genetic Algorithm</h1>
+  </div>
+  
+  <div>
+    <h2>Progress Log</h2>
+    <div class="row">
+      <div class="log column" id="summaryLog"></div>
+      <div class="column"><textarea id="generationLog" rows="25"></textarea></div>
+    </div>
+    
+    <div>
+      <label for="numSims">Number of Simulations to Run per Team:</label>
+      <input type="text" id="numSims" size="3" value="50" onchange="storeLocal(this);" />
+      <input type="submit" value="Run" onclick="runMassLoop();"></input>
+      <input type="submit" value="Stop" onclick="setStopLoop();"></input>
+    </div>
+    
+    <div>
+      <label for="genCount">Generation:</label>
+      <input type="text" id="genCount" size="3" value="0" onchange="storeLocal(this);" />
+    </div>
+  </div>  
+  
+  
+  <button class="accordion colorC">Teams</button>
+  <div class="panel">
+    <div>
+      <div>
+        <label for="numWorkers">Number of Worker Threads to Use (Recommended Number of Cores - 2):</label>
+        <input type="text" id="numWorkers" size="1" value="6" onchange="storeLocal(this);" />
+        <input type="submit" value="Create Worker Threads" onclick="createWorkerThreads();"></input>
+      </div>
+
+      <div>
+        <label for="numCreate">Number of Random Teams to Create:</label>
+        <input type="text" id="numCreate" size="3" value="100" onchange="storeLocal(this);" />
+
+        <input type="checkbox" checked id="useSeed" onchange="storeLocal(this);">Use Seeded Heroes</input>
+        <input type="submit" value="Create Random Teams" onclick="callCreateRandomTeams();"></input>
+      </div>
+      
+      <div>Put data of teams into text area below or generate them randomly.</div>
+      <div>
+        <textarea id="configText" rows="20" onchange="storeLocal(this);"></textarea>
+      </div>
+    </div>
+  </div>
+  
+ 
+</body>
+
+</html>
