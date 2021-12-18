@@ -1,4 +1,4 @@
-# vincitego.github.io
+# All credit goes to Vincitego // vincitego.github.io
 Idle Heroes Battle Simulator version Alpha
 
 
