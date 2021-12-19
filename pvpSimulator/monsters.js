@@ -315,6 +315,7 @@ const monsterMapping = {
 	'mDyne': mDyne,
 	'mNiederhog': mNiederhog,
 	'mSphinx': mSphinx,
+	'mNemean' : mNemean,
 };
 
 

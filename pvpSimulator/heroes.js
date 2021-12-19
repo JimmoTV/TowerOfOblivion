@@ -111,6 +111,7 @@ class hero {
 		this._stats['totalAttack'] = this._stats['attack'];
 		this._stats['totalArmor'] = this._stats['armor'];
 		this._stats['energy'] = 50;
+		this._stats['shield'] = 0;
 		this._stats['skillDamage'] = 0.0;
 		this._stats['precision'] = 0.0;
 		this._stats['block'] = 0.0;

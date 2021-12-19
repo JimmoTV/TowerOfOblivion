@@ -143,7 +143,7 @@ function isDispellable(strName) {
 
 
 function isControlEffect(strName, effects = {}) {
-	const arrControls = ['stun', 'petrify', 'freeze', 'twine', 'Silence', 'Seal of Light', 'Horrify', 'Shapeshift', 'Taunt', 'Dazzle'];
+	const arrControls = ['stun', 'petrify', 'freeze', 'twine', 'Silence', 'Seal of Light', 'Horrify', 'Shapeshift', 'Taunt', 'Dazzle', 'Fear'];
 
 	if (arrControls.includes(strName)) {
 		return true;
