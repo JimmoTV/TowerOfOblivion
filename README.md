@@ -10,7 +10,7 @@ Head to the wiki for more details.
 
   
 ### To Do
-  * Implement heroes
+  * Implement new heroes
   * Improve genetic algorithm
   * Refactor buff/debuff into single object? Add buff/debuff type to object?
   * Refactor trigger queue into individual queues?
